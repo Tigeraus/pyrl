@@ -26,6 +26,6 @@ environment/
 examples2/
 pyrl2/
 openai/
-models/
+# models/
 analysis/
 scripts/
