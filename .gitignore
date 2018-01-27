@@ -29,3 +29,6 @@ openai/
 # models/
 analysis/
 scripts/
+
+*run.sh
+

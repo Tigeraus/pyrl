@@ -20,7 +20,7 @@ default  = {
     'R_TERMINAL':            None,
     'abort_on_last_t':       True,
     'checkfreq':             50,
-    'dt':                    10,
+    'dt':                    100,
     'tau':                   100,
     'tau_reward':            np.inf,
     'var_rec':               0.01,
