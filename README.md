@@ -1,5 +1,13 @@
 # Reward-based training of RNNs
 
+## INFO
+
+*Forked from song's repo*
+
+* Add T.Yang's Task paradigm (2007) to this repo.
+* Transplant some of the code (task and training) to some other project in neuroscience.
+
+
 ## Requirements
 
 This code is written in Python 2.7 and requires
