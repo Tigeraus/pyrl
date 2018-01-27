@@ -40,7 +40,7 @@ def getShapepair():
 
 shapepairs = getShapepair()
 
-n_conditions = len(gt_lts) * len(shapepairs)
+n_conditions = len(targets) * len(shapepairs)
 
 # Training
 n_gradient   = n_conditions
