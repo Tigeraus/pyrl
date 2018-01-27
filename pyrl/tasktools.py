@@ -56,6 +56,7 @@ def to_map(*args):
 # Functions for defining task epochs
 #=========================================================================================
 
+
 def get_idx(t, (start, end)):
     return list(np.where((start <= t) & (t < end))[0])
 
