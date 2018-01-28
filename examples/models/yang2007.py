@@ -29,12 +29,11 @@ targets = ['Red_L', 'Red_R']
 sn = 8
 def getShapepair():
     shapepairs = []
-    for tg in range(2):
-        for i in range(sn):
-            for j in range(sn):
-                for k in range(sn):
-                    for l in range(sn):
-                        shapepairs.append((tg, i, j, k, l))
+    for i in range(sn):
+        for j in range(sn):
+            for k in range(sn):
+                for l in range(sn):
+                    shapepairs.append((i, j, k, l))
     return copy.deepcopy(shapepairs)
 
 
@@ -113,12 +112,12 @@ def get_step(rng, dt, trial, t, a):
             status['choice']   = None
             reward = R_ABORTED
     elif t-1 in epochs['decision']:
-        sum_weight = sum(map(lambda x: weights[x], trial['shapepairs']))
+        sum_weight = sum(map(lambda x: weights[x], trial['shapepair']))
         r_l = None
-        if trial['targets'] == 'Red_L':
+        if trial['target'] == 'Red_L':
             r_l = 1
             pass
-        elif trial['targets'] == 'Red_R':
+        elif trial['target'] == 'Red_R':
             r_l = 0
             pass
         else:

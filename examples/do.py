@@ -13,7 +13,7 @@ import time
 #=========================================================================================
 # Command line
 #=========================================================================================
-
+# python /home/hzcheng/Workspace/pyrl/examples/models/yang2007 train --dt 100 ---dt-save 100 -gpu
 p = argparse.ArgumentParser()
 p.add_argument('model_file', help="model specification")
 p.add_argument('action', nargs='?', type=str, default='info')
